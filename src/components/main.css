@@ -14,6 +14,34 @@ body {
     margin: 20px 0;
 }
 
+.landingHeader {
+    font-size: 4rem;
+    line-height: normal;
+    text-align: center;
+    font-weight: bold;
+}
+
+.landingSubheader {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #94a1b2;
+}
+
+.highlightText {
+    color: #9700ff;
+    font-weight: bold;
+}
+
+.jobHeader {
+    margin-top: 50px;
+}
+
+.landingSubtext {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #94a1b2;
+}
+
 .hourlyHeaderText {
     display: flex;
     justify-content: center;
@@ -138,11 +166,41 @@ body {
     background-color: white;
 }
 
+.jobPostWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .sectionWrapper {
     display: flex;
     justify-content: center;
-    border: 5px solid black;
-    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jobPostLink {
+    color: white;
+}
+
+.jobPost {
+    background-color: black;
+    width: 80%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobPostTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.jobPost p {
+    color: white;
 }
 
 .aboutSectionWrapper {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { makeStyles } from '@material-ui/core'
+import { Typography, makeStyles } from '@material-ui/core'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 import Button from '@material-ui/core/Button'
 import chillGrillLogoOG from '../images/chill_logo_og.jpeg'
@@ -22,30 +22,47 @@ import "./main.css"
 const withStyles = makeStyles(() => ({
   "@global": {
     "*": {
-      // fontFamily: "Angkor !important",
+      fontFamily: "Roboto, sans-serif !important",
       fontWeight: "100"
     }
   },
   navBarRoot: {
     position: "fixed",
     display: "flex",
-    background: "gray",
+    background: "#000000",
     color: "white",
     justifyContent: "space-between",
     width: "100%",
     height: "112px",
     top: 0,
-    boxShadow: "1px 0 10px 0 rgb(89 98 115 / 20%)",
     zIndex: "1",
-    opacity: "0.85"
   },
   navBarTitle: {
+    display: "flex",
     maxWidth: 960,
     padding: `1.45rem 1.0875rem`,
   },
+  navTitle: {
+    fontSize: "2rem",
+    fontWeight: "bold"
+  },
+  navLink: {
+    textDecoration: "none",
+    color: "white",
+  },  
   navButton: {
-    color: "black",
+    color: "white",
     // fontWeight: "bold",
+    textTransform: "none",
+    margin: "auto 10px",
+    textDecoration: "none"
+  },
+  navButtonOutline: {
+    color: "white",
+    border: "1px solid white",
+    borderRadius: "4px",
+    padding: "10px",
+    fontWeight: "bold",
     textTransform: "none",
     margin: "auto 10px",
     textDecoration: "none"
@@ -125,12 +142,12 @@ const withStyles = makeStyles(() => ({
     flexDirection: "column",
   },
   navButtonMobile: {
-  color: "white",
-  // fontWeight: "bold",
-  textTransform: "none",
-  margin: "10px 16px",
-  textDecoration: "none"
-}
+    color: "white",
+    // fontWeight: "bold",
+    textTransform: "none",
+    margin: "10px 16px",
+    textDecoration: "none"
+  }
 }))
 
 
@@ -149,47 +166,32 @@ const Header = ({ siteTitle }) => {
     >
       <div className={classes.navLeftWrapper}>
         <div className={classes.navBarTitle}>
-          <Link to="/" style={{ color: '#001841', textDecoration: `none` }}>
-            <img className={classes.navLogo} src={RocSitesLogo} alt="company logo" />
+          <Link to="/" className={classes.navLink}>
+            {/* <img className={classes.navLogo} src={RocSitesLogo} alt="company logo" /> */}
+            <Typography className={classes.navTitle}>Next Gig</Typography>
           </Link>
-        </div>
-        <div className={classes.navBarButtonWrapper}>
-          <AnchorLink className={classes.navButton}
-            to="/#sectionOne" title="Section 1">
-          </AnchorLink>
-          <AnchorLink className={classes.navButton}
-            to="/#sectionTwo" title="Section 2">
-          </AnchorLink>
-          <AnchorLink className={classes.navButton}
-            to="/#sectionThree" title="Section 3">
-          </AnchorLink>
-
-          <Button
-            className={classes.navCallButton}
-            target="_blank" href="tel:"
-          >
-            <PhoneIcon class="drawerPhoneIcon" />
-            Call Us
-          </Button>
         </div>
       </div>
 
       <div class="socialLinkWrapperNav">
-        <a href="" target="_blank" class="socialLink">
-          <img class="socialNav" src={InstagramIcon} />
-        </a>
-        <a href="" target="_blank" class="socialLink">
-          <img class="socialNavFb" src={FacebookIcon} />
-        </a>
+        <AnchorLink className={classes.navButton}
+          to="/#sectionOne" title="Jobs">
+        </AnchorLink>
+        <AnchorLink className={classes.navButtonOutline}
+          to="/#sectionTwo" title="Sign Up">
+        </AnchorLink>
+        {/* <AnchorLink className={classes.navButton}
+          to="/#sectionThree" title="More Info">
+        </AnchorLink> */}
       </div>
       <div className={classes.navBarHamburgerDrawerWrapper}>
-        <Button
+        {/* <Button
           className={classes.navCallButtonMobile}
           target="_blank" href="tel:"
         >
           <PhoneIcon class="drawerPhoneIcon" />
           Call Us
-        </Button>
+        </Button> */}
         <MenuIcon
           className={classes.hamburgerIcon}
           onClick={toggleDrawer}
@@ -219,13 +221,13 @@ const Header = ({ siteTitle }) => {
                 </AnchorLink>
               </div>
 
-              <Button
+              {/* <Button
                 class="drawerItemLogin"
                 target="_blank" href="tel:"
               >
                 <PhoneIcon class="drawerPhoneIcon" />
                 Call Us
-              </Button>
+              </Button> */}
               <div class="socialLinkWrapperNavMobile">
                 <a href="" target="_blank" class="socialLink">
                   <img class="socialDrawer" src={InstagramIcon} />
