@@ -49,7 +49,10 @@ const withStyles = makeStyles(() => ({
   navLink: {
     textDecoration: "none",
     color: "white",
-  },  
+    "@media(max-width: 600px)": {
+      margin: "auto 0px"
+    }
+  },
   navButton: {
     color: "white",
     // fontWeight: "bold",
@@ -60,6 +63,16 @@ const withStyles = makeStyles(() => ({
   navButtonOutline: {
     color: "white",
     border: "1px solid white",
+    borderRadius: "4px",
+    padding: "10px",
+    fontWeight: "bold",
+    textTransform: "none",
+    margin: "auto 10px",
+    textDecoration: "none"
+  },
+  navButtonOutlineMobile: {
+    color: "black",
+    border: "1px solid black",
     borderRadius: "4px",
     padding: "10px",
     fontWeight: "bold",
@@ -105,7 +118,7 @@ const withStyles = makeStyles(() => ({
   hamburgerIcon: {
     margin: "20px",
     fontSize: "2.5rem",
-    color: "red",
+    color: "white",
     "@media(min-width: 601px)": {
       display: "none"
     }
@@ -142,7 +155,7 @@ const withStyles = makeStyles(() => ({
     flexDirection: "column",
   },
   navButtonMobile: {
-    color: "white",
+    color: "black",
     // fontWeight: "bold",
     textTransform: "none",
     margin: "10px 16px",
@@ -211,31 +224,13 @@ const Header = ({ siteTitle }) => {
             <List>
               <div className={classes.drawerLinkWrapper}>
                 <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionOne" title="Section 1">
+                  to="/#sectionOne" title="Jobs">
                 </AnchorLink>
-                <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionTwo" title="Section 2">
-                </AnchorLink>
-                <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionThree" title="Section 3">
+                <AnchorLink className={classes.navButtonOutlineMobile}
+                  to="/#sectionTwo" title="Sign Up">
                 </AnchorLink>
               </div>
 
-              {/* <Button
-                class="drawerItemLogin"
-                target="_blank" href="tel:"
-              >
-                <PhoneIcon class="drawerPhoneIcon" />
-                Call Us
-              </Button> */}
-              <div class="socialLinkWrapperNavMobile">
-                <a href="" target="_blank" class="socialLink">
-                  <img class="socialDrawer" src={InstagramIcon} />
-                </a>
-                <a href="" target="_blank" class="socialLink">
-                  <img class="socialDrawerFb" src={FacebookIcon} />
-                </a>
-              </div>
             </List>
 
           </div>

@@ -324,6 +324,15 @@ body {
 }
 
 @media(max-width:600px) {
+    .landingSubheader, .landingSubtext {
+        padding: 10px
+    }
+    .jobPost {
+        flex-direction: column;
+    }
+    .landingHeader {
+        margin-top: 100px;
+    }
     .menuLink {
         font-size: 1.25rem;
     }
