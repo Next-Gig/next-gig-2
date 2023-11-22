@@ -181,7 +181,7 @@ const Header = ({ siteTitle }) => {
         <div className={classes.navBarTitle}>
           <Link to="/" className={classes.navLink}>
             {/* <img className={classes.navLogo} src={RocSitesLogo} alt="company logo" /> */}
-            <Typography className={classes.navTitle}>Next Gig</Typography>
+            <Typography className={classes.navTitle}>NextGig</Typography>
           </Link>
         </div>
       </div>
@@ -191,7 +191,7 @@ const Header = ({ siteTitle }) => {
           to="/#sectionOne" title="Jobs">
         </AnchorLink>
         <AnchorLink className={classes.navButtonOutline}
-          to="/#sectionTwo" title="Sign Up">
+          to="/#contactForm" title="Sign Up">
         </AnchorLink>
         {/* <AnchorLink className={classes.navButton}
           to="/#sectionThree" title="More Info">

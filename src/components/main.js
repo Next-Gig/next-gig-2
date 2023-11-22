@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { Link } from "gatsby"
 import "./main.css"
+import { Helmet } from "react-helmet";
 
 const withStyles = makeStyles(() => ({
     mainRoot: {
@@ -204,7 +205,20 @@ const Main = () => {
 
 
             <span className={classes.scrollToContact} id="contactForm"></span>
+            <div className="signupWrapper">
+                <p class="signUpText">Get the latest jobs in your inbox, every week.</p>
+                <form method="post" action="https://sendfox.com/form/1vowyd/1gr590" class="sendfox-form" id="1gr590" data-async="true" data-recaptcha="true">
+                    <p><label className="signUpTextForm" for="sendfox_form_email"></label><input className="emailInput" type="email" id="sendfox_form_email" placeholder="Email" name="email" required /></p>
+                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+                    <p>
+                        <button className="submitEmailButton" type="submit">Submit</button>
+                    </p>
+                </form>
+                <Helmet>
+                    <script src="https://sendfox.com/js/form.js"></script>
+                </Helmet>
 
+            </div>
 
         </div>
     )
