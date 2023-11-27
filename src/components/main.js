@@ -208,8 +208,8 @@ const Main = () => {
             <div className="signupWrapper">
                 <p class="signUpText">Get the latest jobs in your inbox, every week.</p>
                 <form method="post" action="https://sendfox.com/form/1vowyd/1gr590" class="sendfox-form" id="1gr590" data-async="true" data-recaptcha="true">
-                    <p><label className="signUpTextForm" for="sendfox_form_email"></label><input className="emailInput" type="email" id="sendfox_form_email" placeholder="Email" name="email" required /></p>
-                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+                    <p><label className="signUpTextForm" htmlFor="sendfox_form_email"></label><input className="emailInput" type="email" id="sendfox_form_email" placeholder="Email" name="email" required /></p>
+                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="a_password" tabIndex="-1" value="" autoComplete="off" /></div>
                     <p>
                         <button className="submitEmailButton" type="submit">Submit</button>
                     </p>
