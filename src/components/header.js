@@ -6,6 +6,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 import Button from '@material-ui/core/Button'
 import chillGrillLogoOG from '../images/chill_logo_og.jpeg'
 import RocSitesLogo from "../images/logo/logo.png"
+import NextGigLogo from "../images/diamond_svg.svg"
 import coneIcon from "../images/cone_icon.png"
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -47,6 +48,7 @@ const withStyles = makeStyles(() => ({
     fontWeight: "bold"
   },
   navLink: {
+    display: "flex",
     textDecoration: "none",
     color: "white",
     "@media(max-width: 600px)": {
@@ -61,8 +63,8 @@ const withStyles = makeStyles(() => ({
     textDecoration: "none"
   },
   navButtonOutline: {
-    color: "white",
-    border: "1px solid white",
+    color: "#9700ff",
+    border: "1px solid #9700ff",
     borderRadius: "4px",
     padding: "10px",
     fontWeight: "bold",
@@ -71,8 +73,8 @@ const withStyles = makeStyles(() => ({
     textDecoration: "none"
   },
   navButtonOutlineMobile: {
-    color: "black",
-    border: "1px solid black",
+    color: "#9700ff",
+    border: "1px solid #9700ff",
     borderRadius: "4px",
     padding: "10px",
     fontWeight: "bold",
@@ -97,7 +99,8 @@ const withStyles = makeStyles(() => ({
   },
   navLogo: {
     display: "flex",
-    width: "60px",
+    marginRight: "10px",
+    width: "50px",
     margin: "auto",
   },
   drawerItem: {
@@ -118,7 +121,7 @@ const withStyles = makeStyles(() => ({
   hamburgerIcon: {
     margin: "20px",
     fontSize: "2.5rem",
-    color: "white",
+    color: "#9700ff",
     "@media(min-width: 601px)": {
       display: "none"
     }
@@ -180,7 +183,7 @@ const Header = ({ siteTitle }) => {
       <div className={classes.navLeftWrapper}>
         <div className={classes.navBarTitle}>
           <Link to="/" className={classes.navLink}>
-            {/* <img className={classes.navLogo} src={RocSitesLogo} alt="company logo" /> */}
+            <img className={classes.navLogo} src={NextGigLogo} alt="company logo" />
             <Typography className={classes.navTitle}>NextGig</Typography>
           </Link>
         </div>
