@@ -79,7 +79,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title} />
       <div className={classes.layoutRoot}>
         <main className={classes.mainContent}>{children}</main>
         <footer class="footerRoot">
