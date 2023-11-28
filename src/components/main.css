@@ -177,6 +177,13 @@ body {
     color: white;
 }
 
+.jobDescLink {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .jobPost {
     background-color: black;
     width: 80%;
@@ -194,6 +201,14 @@ body {
 
 .jobPost p {
     color: white;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
 }
 
 .aboutSectionWrapper {
@@ -348,23 +363,20 @@ body {
     width: 90%;
 }
 
-
-@keyframes twinkle {
-    from {
-        transform: translateX(1vw);
-    }
-
-    to {
-        transform: translateX(-1vw);
-    }
-}
-
 @media(max-width:600px) {
     .landingSubheader, .landingSubtext {
         padding: 10px
     }
     .jobPost {
         flex-direction: column;
+    }
+
+    .jobDescLink {
+        align-items: flex-start;
+    }
+
+    .textLeft, .textRight {
+        text-align: left;
     }
     .landingHeader {
         margin-top: 100px;
