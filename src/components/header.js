@@ -186,7 +186,7 @@ const Header = ({ siteTitle }) => {
 
       <div class="socialLinkWrapperNav">
         <AnchorLink className={classes.navButton}
-          to="/#sectionOne" title="Jobs">
+          to="/#sectionTwo" title="How it works">
         </AnchorLink>
         <AnchorLink className={classes.navButtonOutline}
           to="/#contactForm" title="Sign Up">
@@ -222,10 +222,10 @@ const Header = ({ siteTitle }) => {
             <List>
               <div className={classes.drawerLinkWrapper}>
                 <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionOne" title="Jobs">
+                  to="/#sectionTwo" title="How it works">
                 </AnchorLink>
                 <AnchorLink className={classes.navButtonOutlineMobile}
-                  to="/#sectionTwo" title="Sign Up">
+                  to="/#contactForm" title="Sign Up">
                 </AnchorLink>
               </div>
 
