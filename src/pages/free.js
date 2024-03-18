@@ -35,9 +35,11 @@ const FreeSignUpPage = () => {
                     <div className="signupWrapper">
                         <p class="signUpText">Get access to free leads, instantly, by signing up below.</p>
                         <form method="post" action="https://sendfox.com/form/1vowyd/1gw556" class="sendfox-form" id="1gw556" data-async="true" data-recaptcha="true">
-                            <p><label for="sendfox_form_email">Email: </label><input type="email" id="sendfox_form_email" placeholder="Email" name="email" required /></p>
+                            <p><label for="sendfox_form_email"></label>
+                            <input className="emailInput" type="email" id="sendfox_form_email" placeholder="Email" name="email" required />
+                            </p>
                             <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
-                            <p><button type="submit">Sign Up</button></p>
+                            <p><button className="submitEmailButton" type="submit">Sign Up</button></p>
                         </form>
                         <Helmet>
                             <script src="https://sendfox.com/js/form.js"></script>
