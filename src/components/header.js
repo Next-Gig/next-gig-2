@@ -188,8 +188,11 @@ const Header = ({ siteTitle }) => {
         <AnchorLink className={classes.navButton}
           to="/#sectionTwo" title="How it works">
         </AnchorLink>
+        <AnchorLink className={classes.navButton}
+          to="/#sectionThree" title="Pricing">
+        </AnchorLink>
         <AnchorLink className={classes.navButtonOutline}
-          to="/#contactForm" title="Sign Up">
+          to="/free" title="Sign Up">
         </AnchorLink>
         {/* <AnchorLink className={classes.navButton}
           to="/#sectionThree" title="More Info">
@@ -224,8 +227,11 @@ const Header = ({ siteTitle }) => {
                 <AnchorLink className={classes.navButtonMobile}
                   to="/#sectionTwo" title="How it works">
                 </AnchorLink>
+                <AnchorLink className={classes.navButtonMobile}
+                  to="/#sectionThree" title="Pricing">
+                </AnchorLink>
                 <AnchorLink className={classes.navButtonOutlineMobile}
-                  to="/#contactForm" title="Sign Up">
+                  to="/free" title="Sign Up">
                 </AnchorLink>
               </div>
 

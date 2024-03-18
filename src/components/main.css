@@ -34,6 +34,7 @@ body {
 
 .jobHeader {
     margin-top: 50px;
+    height: 140px;
 }
 
 .landingSubtext {
@@ -183,13 +184,23 @@ body {
 .howItWorksCardsWrapper {
     display: flex;
     justify-content: center;
+    margin: 25px 0 50px 0;
+
 }
 
 .howItWorksCard {
     display: flex;
-    border: 1px solid black;
+    flex-direction: column;
+    border: 2px solid #9700ff;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    width: 280px;
+}
+
+.howItWorksTitle {
+    color: #9700ff;
 }
 
 .jobPostLink {
@@ -233,6 +244,67 @@ body {
 .aboutSectionWrapper {
     display: flex;
     flex-direction: column;
+}
+
+.pricingRoot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricingTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9700ff;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.pricingSubtitle {
+    text-align: center;
+}
+
+.pricingNumber {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #9700ff;
+}
+
+.pricingPlan {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px;
+    width: 320px;
+    /* box-shadow: 0 10px 25px 0 rgba(0,0,0,0.2) */
+}
+
+.freeSignUpButton {
+    color: #ffffff;
+    background-color: #9700ff;
+    margin: auto 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.greenIcon {
+    color: 
+}
+
+.pricingTextIcon {
+    display: flex;
+}
+
+.pricingWrapper {
+    display: flex;
 }
 
 .drawerItemLogin {}
