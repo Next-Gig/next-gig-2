@@ -455,7 +455,15 @@ body {
     width: 90%;
 }
 
+.connectionsText {
+    text-align: center;
+}
+
 @media(max-width:600px) {
+
+    .jobHeader {
+        font-size: 1.75rem;
+    }
 
     .howItWorksCardsWrapper {
         flex-direction: column;
