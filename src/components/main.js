@@ -112,7 +112,7 @@ const Main = () => {
             <div className={classes.landing}>
                 <div className={classes.mainBanner}>
                     <p class="landingHeader">Find your next gig. <span class="highlightText">Faster.</span></p>
-                    <p class="landingSubheader">Real people. Real leads. Ready to hire.</p>
+                    <p class="landingSubheader">Real companies. Real leads. Ready to hire.</p>
                     {/* <p class="landingSubtext">The traditional job search process is broken. Connections land jobs, not endless applications.</p> */}
                 </div>
 
@@ -121,7 +121,7 @@ const Main = () => {
             <section class="sectionWrapper">
                 <span className={classes.scrollToSectionOne} id="sectionOne"></span>
                 <h1 class="jobHeader">The traditional job search process is broken.</h1>
-                <h2 style={{marginBottom: "100px"}}><span style={{color: "#9700ff", fontWeight: "bold"}}>Connections land jobs</span>, not online applications.</h2>
+                <h2 style={{marginBottom: "100px", textAlign: "center"}}><span style={{color: "#9700ff", fontWeight: "bold"}}>Connections land jobs</span>, not online applications.</h2>
             </section>
             <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
 

@@ -35,6 +35,7 @@ body {
 .jobHeader {
     margin-top: 50px;
     height: 140px;
+    text-align: center;
 }
 
 .landingSubtext {
@@ -455,6 +456,14 @@ body {
 }
 
 @media(max-width:600px) {
+
+    .howItWorksCardsWrapper {
+        flex-direction: column;
+    }
+
+    .pricingWrapper {
+        flex-direction: column;
+    }
 
     .landingSubheader,
     .landingSubtext {
