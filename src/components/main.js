@@ -121,7 +121,7 @@ const Main = () => {
             <section class="sectionWrapper">
                 <span className={classes.scrollToSectionOne} id="sectionOne"></span>
                 <h1 class="jobHeader">The traditional job search process is broken.</h1>
-                <h2 style={{marginBottom: "100px", textAlign: "center"}}><span style={{color: "#9700ff", fontWeight: "bold"}}>Connections land jobs</span>, not online applications.</h2>
+                <h2 style={{ marginBottom: "100px", textAlign: "center" }}><span style={{ color: "#9700ff", fontWeight: "bold" }}>Connections land jobs</span>, not online applications.</h2>
             </section>
             <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
 
@@ -194,22 +194,18 @@ const Main = () => {
             </div>
 
             <span className={classes.scrollToContact} id="contactForm"></span>
-            {/* <div className="signupWrapper">
+            <div className="signupWrapper">
                 <p class="signUpText">Get the latest jobs in your inbox, every week.</p>
-                <form method="post" action="https://sendfox.com/form/1vowyd/1gr590" class="sendfox-form emailWrapper" id="1gr590" data-async="true" data-recaptcha="true">
-                    <p><label className="signUpTextForm" htmlFor="sendfox_form_email"></label>
-                        <input className="emailInput" type="email" id="sendfox_form_email" placeholder="Email" name="email" required />
-                    </p>
-                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="a_password" tabIndex="-1" value="" autoComplete="off" /></div>
-                    <p>
-                        <button className="submitEmailButton" type="submit">Submit</button>
-                    </p>
-                </form>
+                {/* <form method="post" action="https://sendfox.com/form/1vowyd/1gw556" class="sendfox-form" id="1gw556" data-async="true" data-recaptcha="true">
+                    <p><label for="sendfox_form_email">Email: </label><input type="email" id="sendfox_form_email" placeholder="Email" name="email" required /></p>
+                    <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+                    <p><button type="submit">Submit</button></p>
+                </form> */}
                 <Helmet>
                     <script src="https://sendfox.com/js/form.js"></script>
                 </Helmet>
 
-            </div> */}
+            </div>
 
         </div>
     )
