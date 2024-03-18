@@ -5,7 +5,7 @@ import "./main.css"
 import { Helmet } from "react-helmet";
 import CheckIcon from '@mui/icons-material/Check';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import nextGigPreview from "../images/nextgig_preview.png"
+import nextGigPreview from "../images/nextGig_preview_2.png"
 
 const withStyles = makeStyles(() => ({
     mainRoot: {
