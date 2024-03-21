@@ -192,16 +192,34 @@ body {
 .howItWorksCard {
     display: flex;
     flex-direction: column;
-    border: 2px solid #9700ff;
+    border: 2px solid #000000;
     margin: 10px;
     padding: 15px;
     border-radius: 16px;
     text-align: center;
     width: 280px;
+    text-decoration: none;
+}
+
+.howItWorksCardSignUp {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    width: 280px;
+    text-decoration: none;
+    background-color: #9700ff;
+}
+
+.howItWorksTitleSignUp {
+    color: #ffffff;
 }
 
 .howItWorksTitle {
-    color: #9700ff;
+    color: #000000;
 }
 
 .jobPostLink {
@@ -419,7 +437,11 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #9700ff;
+    background-color: #808c97;
+}
+
+.text-center a {
+    display: none;
 }
 
 .signUpText {

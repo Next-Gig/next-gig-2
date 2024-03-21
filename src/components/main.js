@@ -122,6 +122,7 @@ const Main = () => {
                 <span className={classes.scrollToSectionOne} id="sectionOne"></span>
                 <h1 class="jobHeader">The traditional job search process is broken.</h1>
                 <h2 class="connectionsText"><span style={{color: "#9700ff", fontWeight: "bold"}}>Connections land jobs</span>, not online applications.</h2>
+                <p style={{textAlign: "center", margin: "10px 20px"}}>Research shows that <b style={{color: "#9700ff"}}>85% of jobs are filled via networking <span><a target="_blank" href="https://www.zippia.com/advice/networking-statistics/">[source]</a></span></b></p>
             </section>
             <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
 
@@ -129,10 +130,10 @@ const Main = () => {
                 <div class="howItWorksWrapper">
                     <h1>How it works</h1>
                     <div class="howItWorksCardsWrapper">
-                        <div class="howItWorksCard">
-                            <h3 class="howItWorksTitle">Sign Up</h3>
-                            <p>Sign up with your email and access real leads, right now</p>
-                        </div>
+                        <Link to="/free" class="howItWorksCardSignUp">
+                            <h3 class="howItWorksTitleSignUp">Sign Up</h3>
+                            <p style={{color: "white"}}>Sign up with your email and access real leads, right now</p>
+                        </Link>
                         <div class="howItWorksCard">
                             <h3 class="howItWorksTitle">Get the list</h3>
                             <p>Access last month's leads instantly, for free</p>
