@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import {makeStyles} from "@material-ui/core/styles"
 import Header from "./header"
 import Typography from '@material-ui/core/Typography'
+import { Link } from "gatsby"
 import "./layout.css"
 
 const withStyles = makeStyles(() => ({
@@ -28,10 +29,9 @@ const withStyles = makeStyles(() => ({
     },
     footerContent: {
       display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+      justifyContent: "space-between",
+      margin: "auto 20px",
       width: "100%",
-      flexDirection: "column"
 
     },
     copyrightText: {
@@ -85,6 +85,9 @@ const Layout = ({ children }) => {
         <footer class="footerRoot">
           <div className={classes.footerContent}>
             <p className={classes.copyrightText}> © {new Date().getFullYear()} NextGig</p>
+            <div>
+              <Link style={{textDecoration: "none", color: "#ffffff"}} to="/privacy-policy">Privacy Policy</Link>
+            </div>
             {/* <p class="rocsitesText">Website created and maintained by <span><a href="https://www.rocsites.com/" target="_blank">RocSites</a></span></p> */}
           </div>
         </footer>
